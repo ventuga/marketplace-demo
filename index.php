@@ -141,7 +141,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="item.php?id=$itemid" class="add-to-cart">
@@ -153,7 +153,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -163,7 +163,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -178,7 +178,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -188,7 +188,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -203,7 +203,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -213,7 +213,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -228,7 +228,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -240,7 +240,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -255,7 +255,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -265,7 +265,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -280,7 +280,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -290,7 +290,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -305,7 +305,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
@@ -315,7 +315,7 @@ curl_close($ch);
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
                                             <div class="shop-thumbnail">
-                                                <a href="shop-single.html" class="item-link"></a>
+                                                <a href="item.php" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
                                                     <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
@@ -330,7 +330,7 @@ curl_close($ch);
                                                 </div>
                                             </div>
                                             <div class="shop-item-details">
-                                                <h3 class="shop-item-title"><a href="shop-single.html">itemName</a></h3>
+                                                <h3 class="shop-item-title"><a href="item.php">itemName</a></h3>
                                                 <span class="shop-item-price">
                           $itemPrice
                         </span>
