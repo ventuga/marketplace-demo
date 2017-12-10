@@ -23,7 +23,7 @@ if($serverkey == $clientkey) {
     $connectionStatus = "ok";
 } else {
     $connectionStatus = "error";
-    $connectionErrorReason = "Could not verify server keys. Aborting connection."
+    $connectionErrorReason = "Could not verify server keys. Aborting connection.";
 }
 
 // Get server name
