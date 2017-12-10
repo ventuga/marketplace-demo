@@ -1,3 +1,42 @@
+<?php
+// Marketplace verification key
+$clientkey = "M3kwNXgpkunMsmPJkIgtaQJmicrhc";
+// API key
+$apikey = "3m0Y2Oru02Fty6k67o3G0es0WwhazDa2emOchloM";
+
+// IP of the server we want to connect to
+$apiserver = "https://api.ventu.ga";
+
+// Connection!
+
+$ch = curl_init();   
+curl_setopt($ch, CURLOPT_URL, "$apiserver/api.php?action=verify&apikey=$apikey");  
+curl_setopt($ch, CURLOPT_HEADER, 0);  
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
+curl_setopt($ch, CURLOPT_TIMEOUT, 2);
+// might change if using slow api
+$serverkey = curl_exec($ch);  
+curl_close($ch); 
+
+// Check keys
+if($serverkey == $clientkey) {
+    $connectionStatus = "ok";
+} else {
+    $connectionStatus = "error";
+    $connectionErrorReason = "Could not verify server keys. Aborting connection."
+}
+
+// Get server name
+$ch = curl_init();   
+curl_setopt($ch, CURLOPT_URL, "$apiserver/api.php?action=getname&apikey=$apikey");  
+curl_setopt($ch, CURLOPT_HEADER, 0);  
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
+curl_setopt($ch, CURLOPT_TIMEOUT, 2);
+// might change if using slow api
+$servername = curl_exec($ch);  
+curl_close($ch); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,57 +105,38 @@
                         </li>
                     </ul>
                 </nav>
-
-                <div class="connectionStatus" style="display: block !important">
-
-                    <h5 style="display: inline-block">Connection Status</h5>
-                    <img src="img/status/green.png" alt="Not Connected" style="height: auto; !important; width: 10px !important; vertical-align: middle; display: inline-block; margin: 0px 10px">
-                    <p style="font-size: 14px;">You're connected to the Ventuga Marketplace server using <code>DemoServer@ventu.ga</code>.</p>
-                </div>
-
+                <?php
+                
+                if($connectionStatus = "ok") {
+                    echo "<div class=\"connectionStatus\" style=\"display: block !important\"> <h5 style=\"display: inline-block\">Connection Status</h5> <img src=\"img/status/green.png\" alt=\"Connected\" style=\"height: auto; !important; width: 10px !important; vertical-align: middle; display: inline-block; margin: 0px 10px\"> <p style=\"font-size: 14px;\">Verified connection to offical server, using <code>$servername</code>.</p> </div>"
+                }
+                
+                if($connectionStatus = "error") {
+                    echo "<div class=\"connectionStatus\" style=\"display: block !important\"> <h5 style=\"display: inline-block\">Connection Status</h5> <img src=\"img/status/red.png\" alt=\"Connection Error\" style=\"height: auto; !important; width: 10px !important; vertical-align: middle; display: inline-block; margin: 0px 10px\"> <p style=\"font-size: 14px;\"><code>$connectionErrorReason</code>.</p> </div>"
+                }
+                
+                
+                ?>
             </div>
+                    
         </header>
 
         <main class="content-wrapper">
 
             <section class="container-fluid padding-top-3x">
 
-                <h3 class="text-center padding-top">Categories</h3>
-                <div class="row padding-top padding-bottom-3x">
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="#" class="category-link">
-                            <img src="img/categories/txt.png" alt="Category"> popularCategory1
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="#" class="category-link">
-                            <img src="img/categories/txt.png" alt="Category"> popularCategory2
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="#" class="category-link">
-                            <img src="img/categories/txt.png" alt="Category"> popularCategory3
-                        </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="#" class="category-link">
-                            <img src="img/categories/txt.png" alt="Category"> popularCategory4
-                        </a>
-                    </div>
-                </div>
-
+            
                 <div class="row padding-top">
 
                     <div class="col-sm-12">
 
                         <ul class="nav-tabs text-center" role="tablist">
-                            <li class="active"><a href="#newcomers" role="tab" data-toggle="tab">Newly Listed</a></li>
-                            <li><a href="#onsale" role="tab" data-toggle="tab">On Sale</a></li>
+                            <li class="active"><a href="#all" role="tab" data-toggle="tab">All Items</a></li>
                         </ul>
 
                         <div class="tab-content">
 
-                            <div role="tabpanel" class="tab-pane transition fade scale in active" id="newcomers">
+                            <div role="tabpanel" class="tab-pane transition fade scale in active" id="all">
                                 <div class="row space-top-half">
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="shop-item">
@@ -124,11 +144,8 @@
                                                 <a href="shop-single.html" class="item-link"></a>
                                                 <img src="img/shop/txt.png" alt="Shop item">
                                                 <div class="shop-item-tools">
-                                                    <a href="#" class="add-to-whishlist" data-toggle="tooltip" data-placement="top" title="Wishlist">
-                                                        <i class="material-icons favorite_border"></i>
-                                                    </a>
-                                                    <a href="#" class="add-to-cart">
-                                                        <em>Add to Cart</em>
+                                                    <a href="item.php?id=$itemid" class="add-to-cart">
+                                                        <em>View item</em>
                                                         <svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
                                                             <path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11" />
                                                         </svg>
