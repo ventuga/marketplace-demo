@@ -1,9 +1,3 @@
-/*
- * M-Store | Modern E-Commerce Template
- * Copyright 2016 rokaux
- * Theme Custom Scripts
- */
-
 jQuery(document).ready(function($) {
 	'use strict';
 
@@ -177,18 +171,13 @@ jQuery(document).ready(function($) {
 
 	// Toggle Subscribe Popup
 	//------------------------------------------------------------------------------
-	var $subscribeToggle = $('.subscribe-btn'),
-			$subscribePopup = $('.subscribe-popup-wrap'),
+	var $subscribePopup = $('.subscribe-popup-wrap'),
 			$subscribeBackdrop = $('.subscribe-backdrop'),
 			$subscribeClose = $('.subscribe-popup .close-btn');
 
-	$subscribeToggle.on('click', function(e) {
+	$(window).on('load',function(){
 		$subscribeBackdrop.addClass('is-visible');
 		$subscribePopup.addClass('is-visible');
-		setTimeout(function() {
-			$subscribePopup.find('.form-control').focus();
-		}, 300);
-		e.preventDefault();
 	});
 	$subscribeClose.on('click', function() {
 		$subscribeBackdrop.removeClass('is-visible');

@@ -60,9 +60,12 @@ curl_close($ch);
     <script src="js/vendor/page-preloading.js"></script>
 
     <script src="js/vendor/modernizr.custom.js"></script>
+    <script src="js/vendor/jquery-2.1.4.min.js"></script>
+
 </head>
 
 <body class="page-preloading">
+
 
     <div class="page-preloader">
         <div class="preloader">
@@ -443,11 +446,26 @@ curl_close($ch);
                 </div>
 
             </footer>
+            
+
         </main>
 
+        <div class="subscribe-popup-wrap">
+      <div class="inner">
+        <div class="subscribe-popup">
+          <h3 class="widget-title">
+            Please note
+          </h3>
+            <p>This demo is a mirror of our github repo, and is not currently in a production state. We are still working on this demo, so please do not expect it to be 100% working as of yet. Thank you.</p>
+            <a href="#" class="close-btn btn btn-success">I agree</a>
+        </div>
+      </div>
+    </div><!-- .subscribe-popup -->
+    <div class="subscribe-backdrop"></div>
+
+        
     </div>
 
-    <script src="js/vendor/jquery-2.1.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/smoothscroll.js"></script>
     <script src="js/vendor/velocity.min.js"></script>
@@ -456,6 +474,8 @@ curl_close($ch);
     <script src="js/vendor/owl.carousel.min.js"></script>
     <script src="js/vendor/magnific-popup.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    
 
 </body>
 
