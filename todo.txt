@@ -1,0 +1,6 @@
+- Transactions
+	- Download files
+- API Connection
+- MySQL database to act as Ventuga Client
+	- fill shop data
+
