@@ -48,21 +48,21 @@ curl_close($ch);
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Google Material Icons -->
+    
   <link href="css/vendor/material-icons.min.css" rel="stylesheet" media="screen">
 
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
 
-  <!-- Bootstrap -->
+  
   <link href="css/vendor/bootstrap.min.css" rel="stylesheet" media="screen">
 
-  <!-- Theme Styles -->
+  
   <link href="css/theme.min.css" rel="stylesheet" media="screen">
 
-  <!-- Page Preloading -->
+  
   <script src="js/vendor/page-preloading.js"></script>
 
-  <!-- Modernizr -->
+  
   <script src="js/vendor/modernizr.custom.js"></script>
 </head>
 
@@ -256,7 +256,7 @@ curl_close($ch);
                         <a href="https://discord.gg/XMyEte6" class="sb-discord" data-toggle="tooltip" data-placement="top" title="Discord">
                             <i class="socicon-discord"></i>
                         </a>
-                        <a href="mailto:ventuga@protonmail.com" class="sb-mail" data-toggle="tooltip" data-placement="top" title="Email">
+                        <a href="mailto:team@ventu.ga" class="sb-mail" data-toggle="tooltip" data-placement="top" title="Email">
                             <i class="socicon-mail"></i>
                         </a>
                     </div>

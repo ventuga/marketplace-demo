@@ -6,6 +6,10 @@ This repository contains files related to Ventuga Network Marketplace prototype.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Alternatively, please visit http://demo.ventu.ga
 
+## Please note
+
+The demo, right now, is nowhere near finished. This demo as of writing is only a HTML mockup of the actual product. Later on in the development stages, we will support product listings and test out the API thru Ventuga Marketplace Server.
+
 ### Installing
 
 Download/clone this repository.

@@ -23,7 +23,7 @@ if($serverkey == $clientkey) {
     $connectionStatus = "ok";
 } else {
     $connectionStatus = "error";
-    $connectionErrorReason = "Could not verify server keys. Aborting connection.";
+    $connectionErrorReason = "Could not verify server keys. Aborting connection";
 }
 
 // Get server name
@@ -438,7 +438,7 @@ curl_close($ch);
                         <a href="https://discord.gg/XMyEte6" class="sb-discord" data-toggle="tooltip" data-placement="top" title="Discord">
                             <i class="socicon-discord"></i>
                         </a>
-                        <a href="mailto:ventuga@protonmail.com" class="sb-mail" data-toggle="tooltip" data-placement="top" title="Email">
+                        <a href="mailto:team@ventu.ga" class="sb-mail" data-toggle="tooltip" data-placement="top" title="Email">
                             <i class="socicon-mail"></i>
                         </a>
                     </div>
@@ -460,7 +460,7 @@ curl_close($ch);
             <a href="#" class="close-btn btn btn-success">I agree</a>
         </div>
       </div>
-    </div><!-- .subscribe-popup -->
+    </div>
     <div class="subscribe-backdrop"></div>
 
         
